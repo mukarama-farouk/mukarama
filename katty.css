@@ -1,0 +1,295 @@
+h1 {
+    color: navy;
+    text-align: center;
+    font-style: normal;
+    background-color: skyblue;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: dotted;
+
+    
+}
+
+
+h2 {
+    color: rgb(129, 19, 19);
+    text-align: justify;
+    font-size: 20px;
+}
+
+h3 {
+    color: rgb(136, 53, 24);
+    text-align: justify;
+    font-size: 20px;
+}
+
+p{
+    color: rgb(4, 4, 4);
+    font-size: 20px;
+    
+}
+
+li{
+    color: rgb(90, 6, 52);
+    text-align: justify;
+}
+
+abbr{
+    color: rgb(171, 6, 6);
+}
+
+
+/*tables styles */
+/* 02/06/22 */
+
+table{
+    border-spacing: 5;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+table th{
+    text-align: left;
+    background-color: skyblue;
+    color: navy;
+    text-transform: capitalize;
+    
+}
+
+table tfoot{
+    text-align: left;
+    color: navy;
+    background-color: skyblue;
+    text-transform: capitalize;
+    
+}
+
+table td{
+    border: 1px solid rgb(150, 134, 7);
+    padding: 8px;
+    vertical-align: top;
+}
+
+table.Grocery-list tr:nth-child(1),
+table.Grocery-list tr:nth-child(2),
+table.Grocery-list tr:nth-child(3),
+table.Grocery-list tr:nth-child(4),
+table.Grocery-list tr:nth-child(5),
+table.Grocery-list tr:nth-child(6),
+table.Grocery-list tr:nth-child(7){
+    text-align: center;
+    color: rgb(3, 54, 20);
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: rgb(154, 66, 4);
+}
+table tbody tr:nth-child(odd) td {
+    background-color: peru;
+}
+.col-Item,
+.col-Qty,
+.col-Price{
+    width: 35%;
+}
+
+/* form style */
+form{
+    background-color: rgb(47, 213, 202);
+    padding: 30px 40px;
+}
+
+input,
+select{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+input[ type="FIRST NAME"],
+input[ type="NAME"],
+input[ type="PASSWORD"]
+input[ type="LAST NAME"],
+input[ type="EMAIL:"]
+input[ type="TELEPHONE"]{
+
+ width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    height: 40px;
+    font-size: medium;
+}
+
+
+
+input[type="Submit"]{
+     width: 100px;
+     display: block;
+     box-sizing: border-box;
+     color: rgb(189, 46, 14);
+     padding: 10px;
+     border: 1px rgb(206, 235, 43);
+     outline: auto;
+     margin-bottom: 20px;
+}
+
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 1px rgb(90, 6, 52);
+    background-color: navy;
+}
+
+/* 03/06/22 */
+
+.Site-nav a{
+    display: block;
+    color: rgb(172, 13, 103);
+    padding: 20px 20px;
+    background-color: rgb(10, 107, 107);
+    text-align: center;
+    list-style: none;
+}
+
+
+.Site-nav a:hover{
+    background-color: rgb(113, 186, 210);
+}
+
+.group:before,
+.group:after{
+    content: "";
+    display: table;
+}
+
+
+.group{
+    zoom: 1;
+}
+.group li{
+    list-style: none;
+}
+
+footer{
+    text-align: center;
+    font-size: larger;
+    color: goldenrod;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: darkblue;
+
+}
+footer p{
+    color: goldenrod;
+}
+
+body {
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-su0gN91Qo59XN6dAoleooL6J_k6gt-ypw&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: inherit;
+}
+
+.welcome{
+    width: 50%;
+    float: left;
+    padding-right: 40%;
+    box-sizing: border-box;
+
+}
+
+
+.cycle-slideshow {
+    margin-bottom: 30px;
+}
+
+.cycle-pager {
+    position: absolute;
+    top: 20px;
+    z-index: 1003;
+    width: 100%;
+    text-align: center;
+}
+
+.cycle-pager span {
+    text-indent: -9999px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: crimson;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.cycle-pager.cycle-pager-active {
+    background-color: cadetblue;
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+}
+
+.slide img {
+    display: block;
+}
+
+/* previous and next buttons */
+
+.cycle-prev,
+.cycle-next {
+    position: absolute;
+    top: 30%;
+    background-color: rgba(0, 0, 0, .35);
+    color: rgb(77, 11, 134);
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity .5s;
+    
+}
+
+.cycle-next {
+    right: 0;
+}
+
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next {
+    opacity: 1;
+}
+
+.slide-text{
+    position: absolute;
+    bottom: 0;
+    background-color: (0,0,0,.35);
+    color: rgb(#fff);
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+
+}
+
+.slide-text h3,
+.slide-text p{
+    text-align: center;
+    padding: 0;
+       
+}
+.slide-text{
+     position: static;
+     background-color: transparent;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 ;
+}
